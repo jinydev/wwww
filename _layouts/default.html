@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="{{site.lang}}">
     <head>
-
+        {%- include head.html -%}
     </head>
-
     <body>
         {%- include header.html -%}
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">About
+            <small>Subheading</small>
+        </h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">About</li>
+        </ol>
+
         {{ content }}
         {%- include footer.html -%}
+
+        
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </body>
 
 </html>
